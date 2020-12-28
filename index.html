@@ -15,15 +15,15 @@
             background-image: paint(checkerboard);
         }
     </style>
-    <script>
-        CSS.paintWorklet.addModule('js/checkerboard.js');
-    </script>
 </head>
 
 <body>
     <label for="ho">Houdini</label>
     <textarea name="ho" id="ho" cols="32" rows="10"></textarea>
-
+    <script src="js/css-paint-polyfill.js"></script>
+    <script>
+        CSS.paintWorklet.addModule('js/checkerboard.js');
+    </script>
 </body>
 
 </html>
